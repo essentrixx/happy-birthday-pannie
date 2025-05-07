@@ -1,0 +1,143 @@
+body {
+  font-family: serif;
+  color: #1f2937; /* Tailwind gray-800 */
+  background-color: #fff1f2; /* Tailwind pink-50 */
+  margin: 0;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 768px; /* Tailwind max-w-3xl */
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-size: 2.25rem;
+  color: #b91c1c; /* Tailwind red-700 */
+  font-weight: 400;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.chapter-title {
+  font-size: 1.5rem;
+  color: #dc2626; /* Tailwind red-600 */
+  font-weight: 400;
+  border-bottom: 1px dashed #fecaca; /* Tailwind red-200 */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.event {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.event-date {
+  font-style: italic;
+  font-size: 0.875rem;
+  color: #6b7280; /* Tailwind gray-500 */
+  margin-bottom: 0.5rem;
+}
+
+.event img {
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.event img:hover {
+  transform: scale(1.05);
+}
+
+.heart-icon {
+  position: absolute;
+  top: -0.75rem;
+  left: -0.75rem;
+  background: #ffffff;
+  border-radius: 9999px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ef4444; /* Tailwind red-500 */
+  font-size: 1rem;
+}
+
+.love-button {
+  display: block;
+  margin: 2rem auto;
+  font-size: 2rem;
+  color: #b91c1c;
+  animation: pulse 2s infinite;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.final-message {
+  background-color: #fef2f2; /* Tailwind red-50 */
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.final-message h2 {
+  color: #dc2626;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 3rem;
+}
+
+/* Heart falling animation */
+.falling-heart {
+  position: fixed;
+  color: #ef4444;
+  pointer-events: none;
+  user-select: none;
+  z-index: 9999;
+  animation: fall linear forwards;
+}
+
+.first-meet{
+  width: 200px;
+  max-width: 300px;
+  border-radius: 12px;
+  margin-top: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
