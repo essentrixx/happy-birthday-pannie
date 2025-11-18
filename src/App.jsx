@@ -3,6 +3,7 @@ import firstmeet from './assets/firstmeet.jpg';
 import favsmile from './assets/favsmile.jpg';
 import happiesttime from './assets/happiesttime.jpg';
 import perfectenergy from './assets/perfectenergy.jpg';
+import firstddate from './assets/firstddate.jpg';
 import fight from './assets/fight.jpg';
 import hbd from './assets/hbd.jpg'
 
@@ -29,7 +30,8 @@ const memories = [
       },
       {
         date: 'Our first date',
-        text: `We haven’t had our first date yet, but I know exactly what it’ll look like. It’ll be at the airport, the moment we finally meet. I’ll run into your arms, bury my face in your chest, and cry like a kid — not because I’m sad, but because I’ll know we did it. We made it.`
+        text: `We haven’t had our first date yet, but I know exactly what it’ll look like. It’ll be at the airport, the moment we finally meet. I’ll run into your arms, bury my face in your chest, and cry like a kid — not because I’m sad, but because I’ll know we did it. We made it.`,
+        image: firstddate,
       }
     ]
   },
